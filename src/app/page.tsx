@@ -1,6 +1,5 @@
 import HomeHero from "@/components/HomeHero";
 import Section from "@/components/ui/Section";
-import TornTitle from "@/components/ui/TornTitle";
 import HobbiesPolaroids from "@/components/HobbiesPolaroids";
 
 export default function Home() {
@@ -10,8 +9,9 @@ export default function Home() {
 
       {/* Highlights removed per request */}
 
-      <TornTitle text="Hobbies" />
-      <HobbiesPolaroids />
+      <Section title="Hobbies">
+        <HobbiesPolaroids />
+      </Section>
     </main>
   );
 }
