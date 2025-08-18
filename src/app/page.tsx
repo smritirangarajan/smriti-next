@@ -10,12 +10,12 @@ export default function Home() {
 
       {/* Highlights removed per request */}
 
-      <Section title="Hobbies">
-        <HobbiesPolaroids />
-      </Section>
-
       <Section title="Skills">
         <Skills />
+      </Section>
+
+      <Section title="Hobbies">
+        <HobbiesPolaroids />
       </Section>
     </main>
   );

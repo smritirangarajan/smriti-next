@@ -3,15 +3,15 @@ export default function Footer() {
     <footer className="mt-24 border-t border-black/10">
       <div className="container-page flex h-16 items-center justify-between">
         <p className="text-sm">© {new Date().getFullYear()} Smriti Rangarajan</p>
-        <div className="flex items-center gap-3">
-          <a href="https://github.com/smritirangarajan" target="_blank" rel="noreferrer" className="rounded-full border border-black/10 bg-white p-2 shadow hover:scale-105 transition">
-            <img src="/assets/logos/github.png" alt="GitHub" className="h-5 w-5" />
+        <div className="flex items-center gap-4">
+          <a href="https://github.com/smritirangarajan" target="_blank" rel="noreferrer" className="hover:underline">
+            GitHub
           </a>
-          <a href="mailto:smriti_rangarajan@berkeley.edu" className="rounded-full border border-black/10 bg-white p-2 shadow hover:scale-105 transition">
-            <img src="/email.png" alt="Email" className="h-5 w-5" />
+          <a href="mailto:smriti_rangarajan@berkeley.edu" className="hover:underline">
+            Email
           </a>
-          <a href="https://www.linkedin.com/in/smriti-rangarajan/" target="_blank" rel="noreferrer" className="rounded-full border border-black/10 bg-white p-2 shadow hover:scale-105 transition">
-            <img src="/assets/logos/linkedin.png" alt="LinkedIn" className="h-5 w-5" />
+          <a href="https://www.linkedin.com/in/smriti-rangarajan/" target="_blank" rel="noreferrer" className="hover:underline">
+            LinkedIn
           </a>
         </div>
       </div>

@@ -26,18 +26,14 @@ function PicturePlane({ url }: { url: string }) {
 }
 
 export default function HeroCanvas() {
-  const [showReal, setShowReal] = useState(false);
-  useEffect(() => {
-    const id = setTimeout(() => setShowReal(true), 900);
-    return () => clearTimeout(id);
-  }, []);
+  const [showReal, setShowReal] = useState(true);
   return (
     <div className="h-[360px] w-full rounded-3xl bg-lavender-200">
-      <Canvas shadows camera={{ position: [0, 0, 5], fov: 50 }} onClick={() => setShowReal((s) => !s)}>
+      <Canvas shadows camera={{ position: [0, 0, 5], fov: 50 }}>
         <ambientLight intensity={0.7} />
         <directionalLight position={[5, 5, 5]} intensity={1} castShadow />
         <Suspense fallback={null}>
-          {showReal ? <PicturePlane url="/assets/hero/frontimage.png" /> : <Blob />}
+          {showReal ? <PicturePlane url="/assets/hero/front-image-hover.png" /> : <Blob />}
           <Environment preset="city" />
         </Suspense>
       </Canvas>

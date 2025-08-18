@@ -33,6 +33,11 @@ export default function BerkeleyPage() {
             </ul>
           </div>
         </div>
+        <div className="container-page mt-8">
+          <div className="rounded-md border-2 border-lavender-600 bg-white p-3 shadow-[6px_6px_0_0_var(--lavender-600)]">
+            <Image src="/Berkeley.png" alt="Berkeley" width={1200} height={600} className="h-auto w-full object-cover" />
+          </div>
+        </div>
       </Section>
     </main>
   );

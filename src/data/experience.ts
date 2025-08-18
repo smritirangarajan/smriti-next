@@ -39,6 +39,14 @@ export const experience: Experience[] = [
       "Drove activation experiments and user research for growth.",
     ],
   },
+  {
+    company: "Wyzant",
+    role: "Tutor",
+    logo: "/assets/logos/wyzant.png",
+    highlights: [
+      "Tutored students in math and CS topics via Wyzant platform.",
+    ],
+  },
 ];
 
 

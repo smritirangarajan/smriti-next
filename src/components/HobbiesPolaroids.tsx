@@ -14,17 +14,16 @@ export default function HobbiesPolaroids() {
     <div className="container-page">
       <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-4">
         {hobbies.map((h, i) => (
-          <div key={h.title} className="relative pb-6">
-            <div className="absolute -top-7 left-1/2 -translate-x-1/2">
-              <Image src="/assets/decor/tack.png" alt="tack" width={24} height={24} />
+          <div key={h.title} className="group relative">
+            <div className="relative h-40 w-40 mx-auto rounded-full border-2 border-lavender-600 bg-white shadow-[4px_6px_0_0_var(--lavender-600)] overflow-hidden">
+              <Image src={h.image} alt={h.title} fill className="object-cover" />
             </div>
-            <div className="rounded-md border-2 border-black/20 bg-white p-3 shadow-[4px_6px_0_0_rgba(0,0,0,0.3)]">
-              <div className="relative h-52 w-full">
-                <Image src={h.image} alt={h.title} fill className="object-cover" />
-              </div>
-              <p className="mt-3 text-center font-display text-xl text-black">{h.title}</p>
+            <div className="absolute left-1/2 -top-3 -translate-x-1/2">
+              <Image src="/assets/decor/tack.png" alt="tack" width={18} height={18} />
             </div>
-            <div className="pointer-events-none absolute left-1/2 bottom-0 h-4 w-4 -translate-x-1/2 translate-y-2 rounded-full bg-lavender-600 shadow-[0_2px_0_0_rgba(0,0,0,0.25)]" />
+            <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-md bg-black/60 px-3 py-1 text-white opacity-0 transition-opacity group-hover:opacity-100">
+              {h.title}
+            </div>
           </div>
         ))}
       </div>

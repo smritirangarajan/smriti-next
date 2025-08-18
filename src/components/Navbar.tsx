@@ -32,6 +32,17 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
+          <div className="flex items-center gap-2">
+            <a href="https://github.com/smritirangarajan" target="_blank" rel="noreferrer" className="rounded-full border border-black/10 bg-white p-1 shadow hover:scale-105 transition">
+              <img src="/assets/logos/github.png" alt="GitHub" className="h-4 w-4" />
+            </a>
+            <a href="mailto:smriti_rangarajan@berkeley.edu" className="rounded-full border border-black/10 bg-white p-1 shadow hover:scale-105 transition">
+              <img src="/email.png" alt="Email" className="h-4 w-4" />
+            </a>
+            <a href="https://www.linkedin.com/in/smriti-rangarajan/" target="_blank" rel="noreferrer" className="rounded-full border border-black/10 bg-white p-1 shadow hover:scale-105 transition">
+              <img src="/assets/logos/linkedin.png" alt="LinkedIn" className="h-4 w-4" />
+            </a>
+          </div>
         </div>
       </div>
     </motion.nav>
