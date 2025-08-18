@@ -1,0 +1,37 @@
+"use client";
+
+import { motion } from "framer-motion";
+import HeroCanvas from "@/components/three/HeroCanvas";
+
+export default function HomeHero() {
+  return (
+    <div className="container-page mt-8 grid gap-6 md:grid-cols-2">
+      <div className="flex flex-col justify-center gap-4">
+        <motion.h1
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl font-semibold text-black"
+        >
+          Hi! I’m Smriti, a UC Berkeley student studying Economics and Data Science.
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-black/80"
+        >
+          I love building products and solving problems across data, design, and engineering.
+        </motion.p>
+        <div className="flex gap-3">
+          <a className="pill" href="/projects">Projects</a>
+          <a className="pill" href="/experience">Experience</a>
+          <a className="pill" href="/berkeley">Berkeley</a>
+        </div>
+      </div>
+      <HeroCanvas />
+    </div>
+  );
+}
+
+
