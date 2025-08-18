@@ -21,7 +21,7 @@ export default function HobbiesPolaroids() {
               <div className="relative h-52 w-full">
                 <Image src={h.image} alt={h.title} fill className="object-cover" />
               </div>
-              <p className="mt-3 text-center font-[\"Architects Daughter\",cursive] text-xl text-black">{h.title}</p>
+              <p className="mt-3 text-center font-display text-xl text-black">{h.title}</p>
             </div>
           </div>
         ))}
