@@ -6,7 +6,7 @@ import { classes, clubs } from "@/data/classes";
 export default function BerkeleyPage() {
   return (
     <main>
-      <Section title="Berkeley" subtitle="Classes and clubs.">
+      <Section title="Berkeley" subtitle="Computer Science and Data Science — classes and clubs.">
         <div className="grid gap-8 md:grid-cols-[1fr_320px]">
           <div className="rounded-md border-2 border-lavender-600 bg-white p-6 shadow-[6px_6px_0_0_var(--lavender-600)]">
             <h3 className="text-xl font-semibold text-black">Classes</h3>

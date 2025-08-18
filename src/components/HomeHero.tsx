@@ -13,7 +13,7 @@ export default function HomeHero() {
           transition={{ duration: 0.6 }}
           className="text-4xl font-semibold text-black"
         >
-          Hi! I’m Smriti, a UC Berkeley student studying Economics and Data Science.
+          Hi! I’m Smriti, a UC Berkeley student studying Computer Science and Data Science.
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 10 }}
