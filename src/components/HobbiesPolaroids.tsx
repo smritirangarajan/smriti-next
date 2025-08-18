@@ -12,8 +12,8 @@ const hobbies: Hobby[] = [
 export default function HobbiesPolaroids() {
   return (
     <div className="container-page">
-      <div className="relative mb-8 h-3 w-full rounded-full bg-lavender-300" />
-      <div className="grid gap-8 md:grid-cols-4">
+      <div className="relative mx-auto mb-8 h-2 w-full max-w-5xl rounded-full bg-lavender-300" />
+      <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-4">
         {hobbies.map((h, i) => (
           <div key={h.title} className="relative">
             <div className="absolute -top-6 left-1/2 h-8 w-5 -translate-x-1/2 rounded-sm bg-lavender-300 shadow" />

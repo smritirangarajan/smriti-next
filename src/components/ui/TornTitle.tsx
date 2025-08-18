@@ -18,13 +18,13 @@ export default function TornTitle({ text }: { text: string }) {
   }, [text]);
 
   return (
-    <div className="relative mx-auto mb-6 max-w-5xl">
-      <div className="relative mx-auto w-full max-w-5xl">
-        <Image src="/assets/decor/tornpaper.png" alt="torn paper" width={1600} height={500} className="h-auto w-full" />
+    <div className="relative mx-auto mb-6 max-w-3xl">
+      <div className="relative mx-auto w-full">
+        <Image src="/assets/decor/tornpaper.png" alt="torn paper" width={900} height={260} className="h-auto w-full" />
         <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/3">
-          <Image src="/assets/decor/tack.png" alt="tack" width={70} height={70} />
+          <Image src="/assets/decor/tack.png" alt="tack" width={48} height={48} />
         </div>
-        <div className="absolute left-6 top-1/2 -translate-y-1/2 text-3xl font-semibold text-black">
+        <div className="absolute left-8 top-1/2 -translate-y-1/2 text-2xl font-semibold text-black">
           {display}
         </div>
       </div>
