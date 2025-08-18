@@ -1,8 +1,9 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { Float, Environment, MeshWobbleMaterial } from "@react-three/drei";
+import { Float, Environment, MeshWobbleMaterial, useTexture } from "@react-three/drei";
 import { Suspense } from "react";
+import { useState } from "react";
 
 function Blob() {
   return (
@@ -15,14 +16,29 @@ function Blob() {
   );
 }
 
+function PicturePlane({ url }: { url: string }) {
+  const tex = useTexture(url);
+  return (
+    <mesh position={[0, 0, 0]}>
+      <planeGeometry args={[2.4, 2.4]} />
+      <meshBasicMaterial map={tex} toneMapped={false} />
+    </mesh>
+  );
+}
+
 export default function HeroCanvas() {
+  const [showReal, setShowReal] = useState(false);
   return (
     <div className="h-[360px] w-full rounded-3xl bg-lavender-200">
-      <Canvas shadows camera={{ position: [0, 0, 5], fov: 50 }}>
+      <Canvas shadows camera={{ position: [0, 0, 5], fov: 50 }} onClick={() => setShowReal((s) => !s)}>
         <ambientLight intensity={0.7} />
         <directionalLight position={[5, 5, 5]} intensity={1} castShadow />
         <Suspense fallback={null}>
-          <Blob />
+          {showReal ? (
+            <PicturePlane url="/assets/hero/frontimage.png" />
+          ) : (
+            <Blob />
+          )}
           <Environment preset="city" />
         </Suspense>
       </Canvas>
