@@ -23,13 +23,14 @@ export default function HomeHero() {
         >
           I love building products and solving problems across data, design, and engineering.
         </motion.p>
-        <div className="flex gap-3">
-          <a className="pill" href="/projects">Projects</a>
-          <a className="pill" href="/experience">Experience</a>
-          <a className="pill" href="/berkeley">Berkeley</a>
+        <div className="flex gap-4">
+          <a className="btn-primary" href="/projects">My Projects</a>
+          <a className="btn-outline" href="mailto:smriti_rangarajan@berkeley.edu">Contact Me</a>
         </div>
       </div>
-      <HeroCanvas />
+      <div className="rounded-xl border-2 border-lavender-600 bg-white p-2 shadow-[6px_6px_0_0_var(--lavender-600)]">
+        <HeroCanvas />
+      </div>
     </div>
   );
 }

@@ -7,10 +7,10 @@ export default function ProjectsPage() {
   return (
     <main>
       <Section title="Projects" subtitle="Each project has a GitHub link and short description.">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p) => (
-            <div key={p.slug} className="card overflow-hidden">
-              <div className="relative h-40 w-full">
+            <div key={p.slug} className="rounded-md border-2 border-lavender-600 bg-white shadow-[6px_6px_0_0_var(--lavender-600)] overflow-hidden">
+              <div className="relative h-48 w-full">
                 <Image src={p.image} alt={p.name} fill className="object-cover" />
               </div>
               <div className="p-4">

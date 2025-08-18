@@ -16,7 +16,7 @@ export default function Navbar() {
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 120, damping: 14 }}
-      className="sticky top-0 z-50 w-full bg-lavender-300 shadow-sm"
+      className="sticky top-0 z-50 w-full bg-lavender-300 shadow-[0_2px_0_0_var(--lavender-600)]"
     >
       <div className="container-page flex h-12 items-center justify-between">
         <Link href="/" className="font-semibold text-black">
