@@ -14,7 +14,7 @@ export default function HobbiesPolaroids() {
     <div className="container-page">
       <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-4">
         {hobbies.map((h, i) => (
-          <div key={h.title} className="relative">
+          <div key={h.title} className="relative pb-6">
             <div className="absolute -top-7 left-1/2 -translate-x-1/2">
               <Image src="/assets/decor/tack.png" alt="tack" width={24} height={24} />
             </div>
@@ -24,6 +24,7 @@ export default function HobbiesPolaroids() {
               </div>
               <p className="mt-3 text-center font-display text-xl text-black">{h.title}</p>
             </div>
+            <div className="pointer-events-none absolute left-1/2 bottom-0 h-4 w-4 -translate-x-1/2 translate-y-2 rounded-full bg-lavender-600 shadow-[0_2px_0_0_rgba(0,0,0,0.25)]" />
           </div>
         ))}
       </div>

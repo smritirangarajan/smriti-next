@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 const links = [
   { href: "/", label: "About" },
@@ -12,10 +11,6 @@ const links = [
 ];
 
 export default function Navbar() {
-  const [theme, setTheme] = useState<"light"|"dark">("light");
-  useEffect(()=>{
-    document.documentElement.setAttribute("data-theme", theme === "dark" ? "dark" : "light");
-  },[theme]);
   return (
     <motion.nav
       initial={{ y: -24, opacity: 0 }}
@@ -37,9 +32,6 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <button onClick={()=>setTheme(t=>t==="light"?"dark":"light")} className="rounded-md border border-black/20 bg-white/60 px-3 py-1 text-sm shadow hover:opacity-90">
-            {theme === "dark" ? "Light" : "Dark"}
-          </button>
         </div>
       </div>
     </motion.nav>
