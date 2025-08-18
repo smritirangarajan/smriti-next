@@ -9,7 +9,7 @@ export default function ProjectsPage() {
     <main>
       <Section title="Projects" subtitle="Grouped by type.">
         {[
-          { label: "Full Stack", match: (slug: string) => ["spenderella", "courtchat", "munchmatch", "mlh-portfolio", "evently"].includes(slug) },
+          { label: "Full Stack", match: (slug: string) => ["spenderella", "courtchat", "munchmatch", "mlh-portfolio", "evently", "verba", "tab-itha"].includes(slug) },
           { label: "Machine Learning", match: (slug: string) => ["eye-disease-detection", "lstm-stock-prediction", "pdf-kg"].includes(slug) },
           { label: "Just for Fun", match: (slug: string) => ["mocktrial-type", "donkey-kong", "old-website"].includes(slug) },
         ].map((group) => (
