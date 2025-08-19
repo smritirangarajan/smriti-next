@@ -7,7 +7,7 @@ import { projects } from "@/data/projects";
 export default function ProjectsPage() {
   return (
     <main>
-      <Section title="Projects" subtitle="Grouped by type.">
+      <Section title="Projects" subtitle="Organized by category">
         {[
           { label: "Full Stack", match: (slug: string) => ["spenderella", "courtchat", "munchmatch", "mlh-portfolio", "evently", "verba", "tab-itha"].includes(slug) },
           { label: "Machine Learning", match: (slug: string) => ["eye-disease-detection", "lstm-stock-prediction", "pdf-kg"].includes(slug) },

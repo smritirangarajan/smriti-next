@@ -56,3 +56,51 @@ body {
 }
 
 /* Dark mode removed per request */
+/* Skill icon sizing + click spin */
+.skill-icon {
+  @apply w-20 h-20 sm:w-24 sm:h-24; /* bigger icons */
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.skill-icon.spin {
+  animation: spinOnce 600ms linear 1;
+}
+
+@keyframes spinOnce {
+  from { transform: rotateY(0deg); }
+  50%  { transform: rotateY(90deg); }
+  to   { transform: rotateY(180deg); }
+}
+
+/* Front/back faces for name flip */
+.skill-face,
+.skill-name {
+  backface-visibility: hidden;
+  transform: translateZ(1px);
+}
+.skill-name {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  opacity: 0;
+  transform: rotateY(180deg) translateZ(1px);
+}
+.skill-icon.show-name .skill-face { opacity: 0; }
+.skill-icon.show-name .skill-name { opacity: 1; }
+
+/* --- 3D flip helpers (required by Hero + Skills) --- */
+.perspective-1000 { perspective: 1000px; }
+.transform-style-preserve-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; }
+.rotate-y-180 { transform: rotateY(180deg); }
+.flip-3d { transform: translateZ(0); will-change: transform; }
+
+/* Optional: one-time spin animations for Skills */
+@keyframes spinY { from {transform: rotateY(0)} to {transform: rotateY(180deg)} }
+.animate-spin-y { animation: spinY 600ms linear forwards; }
+
+@keyframes unspinY { from {transform: rotateY(180deg)} to {transform: rotateY(0)} }
+.animate-unspin-y { animation: unspinY 600ms linear forwards; }

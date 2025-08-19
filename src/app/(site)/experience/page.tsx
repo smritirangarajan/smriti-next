@@ -15,10 +15,13 @@ export default function ExperiencePage() {
                 <div className="md:col-span-1">
                   <div className="rounded-md border-2 border-lavender-600 bg-white p-5 shadow-[6px_6px_0_0_var(--lavender-600)]">
                     <div className="flex items-center gap-4">
-                      <Image src={e.logo} alt={e.company} width={48} height={48} className="rounded-full" />
+                      <div className="relative h-16 w-16 flex-shrink-0">
+                        <Image src={e.logo} alt={e.company} fill className="rounded-full object-cover" />
+                      </div>
                       <div>
                         <h3 className="text-xl font-semibold text-black">{e.role}</h3>
                         <p className="text-black/70">{e.company}</p>
+                        <p className="text-sm text-black/60">{e.dates}</p>
                       </div>
                     </div>
                     <ul className="mt-3 list-disc pl-5 text-black/80">

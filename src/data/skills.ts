@@ -1,26 +1,32 @@
 export type Skill = {
   name: string;
+  category: string;
   image: string;
-  category: "Languages" | "Frameworks" | "Databases" | "Design";
 };
 
 export const skills: Skill[] = [
-  { name: "Python", image: "/assets/skills/python.png", category: "Languages" },
-  { name: "JavaScript", image: "/assets/skills/javascript.jpg", category: "Languages" },
-  { name: "TypeScript", image: "/assets/skills/javascript.jpg", category: "Languages" },
-  { name: "React", image: "/assets/skills/react.png", category: "Frameworks" },
-  { name: "Next.js", image: "/assets/skills/react.png", category: "Frameworks" },
-  { name: "Express", image: "/assets/skills/javascript.jpg", category: "Frameworks" },
-  { name: "Tailwind CSS", image: "/assets/skills/figma.png", category: "Frameworks" },
-  { name: "Flask", image: "/assets/skills/python.png", category: "Frameworks" },
-  { name: "FastAPI", image: "/assets/skills/python.png", category: "Frameworks" },
-  { name: "TensorFlow", image: "/assets/skills/python.png", category: "Frameworks" },
-  { name: "PyTorch", image: "/assets/skills/python.png", category: "Frameworks" },
-  { name: "MongoDB", image: "/assets/skills/sql.jpg", category: "Databases" },
-  { name: "MySQL", image: "/assets/skills/sql.jpg", category: "Databases" },
-  { name: "Supabase", image: "/assets/skills/sql.jpg", category: "Databases" },
-  { name: "Figma", image: "/assets/skills/figma.png", category: "Design" },
-  { name: "Adobe InDesign", image: "/assets/skills/figma.png", category: "Design" },
+  // Languages
+  { name: "Python", category: "Languages", image: "/assets/skills/python.png" },
+  { name: "TensorFlow", category: "Languages", image: "/assets/skills/tensorflow.png" },
+  { name: "PyTorch", category: "Languages", image: "/assets/skills/pytorch.png" },
+  { name: "SQL", category: "Languages", image: "/assets/skills/sql.jpg" },
+  { name: "JavaScript", category: "Languages", image: "/assets/skills/javascript.jpg" },
+  { name: "React", category: "Languages", image: "/assets/skills/react.png" },
+  { name: "Node", category: "Languages", image: "/assets/skills/nodejs.png" },
+  { name: "Java", category: "Languages", image: "/assets/skills/java.png" },
+  
+  // Technologies/Frameworks
+  
+  { name: "Docker", category: "Technologies/Frameworks", image: "/assets/skills/docker.png" },
+  { name: "Git", category: "Technologies/Frameworks", image: "/assets/skills/git.png" },
+  { name: "Firebase", category: "Technologies/Frameworks", image: "/assets/skills/firebase.png" },
+  { name: "Streamlit", category: "Technologies/Frameworks", image: "/assets/skills/streamlit.png" },
+  { name: "Vercel", category: "Technologies/Frameworks", image: "/assets/skills/vercel.png" },
+  { name: "MongoDB", category: "Technologies/Frameworks", image: "/assets/skills/mongodb.png" },
+  { name: "Figma", category: "Technologies/Frameworks", image: "/assets/skills/figma.png" },
+  { name: "Grafana", category: "Technologies/Frameworks", image: "/assets/skills/grafana.png" },
+
 ];
+
 
 

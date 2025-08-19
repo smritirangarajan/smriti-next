@@ -23,6 +23,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Smriti Rangarajan",
   description: "Portfolio of Smriti Rangarajan",
+  icons: {
+    icon: "assets/logos/icon.png",
+  },
 };
 
 export default function RootLayout({

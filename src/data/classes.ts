@@ -10,12 +10,13 @@ export const classes = [
 ];
 
 export const clubs = [
-  { name: "Cal Mock Trial", role: "Attorney", logo: "/assets/logos/pwlogo.png" },
+  { name: "Cal Mock Trial", role: "Attorney", logo: "/assets/logos/mock.png" },
   {
     name: "Women in Computing and Data Science",
     role: "Data Science Committee",
     logo: "/assets/logos/wicds.jpeg",
   },
 ];
+
 
 
