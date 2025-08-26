@@ -10,8 +10,8 @@ export type Project = {
 export const projects: Project[] = [
   // Full Stack
   { slug: "spenderella", name: "Spenderella", image: "/assets/projects/spenderella.png", github: "https://github.com/smritirangarajan/spenderella", description: "Fullstack budgeting app with auth, analytics, and receipt scanenrs", tags: ["MERN Stack", "Gemini API", "Cron Jobs"] },
-  { slug: "courtchat", name: "CourtChat", image: "/assets/projects/courtchat.png", github: "https://github.com/court-chat", description: "RAG Chatbot for Supreme Courtcases", tags: ["VectorDB", "Next.js", "OpenAI"] },
-  { slug: "munchmatch", name: "MunchMatch", image: "/assets/projects/munchmatch.png", github: "https://github.com/munchmatch", description: "Swipe to match restaurants with friends.", tags: ["MERN Stack", "Vercel", "Render"] },
+  { slug: "courtchat", name: "CourtChat", image: "/assets/projects/courtchat.png", github: "https://github.com/smritirangarajan/court-chat", description: "RAG Chatbot for Supreme Courtcases", tags: ["VectorDB", "Next.js", "OpenAI"] },
+  { slug: "munchmatch", name: "MunchMatch", image: "/assets/projects/munchmatch.png", github: "https://github.com/smritirangarajan/munchmatch", description: "Swipe to match restaurants with friends.", tags: ["MERN Stack", "Vercel", "Render"] },
   { slug: "verba", name: "VERBA", image: "/assets/projects/verba.png", github: "https://github.com/jmx1e/verba", description: "AI EMS Voice Agent", tags: ["Vapi", "Letta LLM", "CalHacks"] },
   { slug: "tab-itha", name: "Tab-itha", image: "/assets/projects/tabitha.png", github: "https://github.com/smritirangarajan/tabitha-2", description: "AI Browser Agent", tags: ["React", "Claude", "FastAPI"] },
   { slug: "mlh-portfolio", name: "MLH Portfolio", image: "/assets/projects/mlh.png", github: "https://github.com/smritirangarajan/mlh-portfolio", description: "Production Engineering fellowship portfolio.", tags: ["DevOps", "Linux", "Flask"] },
