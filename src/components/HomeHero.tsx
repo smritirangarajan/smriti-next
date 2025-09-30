@@ -52,9 +52,7 @@ export default function HomeHero() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-lg text-black/80 leading-relaxed"
             >
-              Right now, I’m a Production Engineering Fellow at Meta and Major
-              League Hacking, working on full-stack applications and system
-              automation. When I’m not coding, you’ll find me dancing,
+              Right now, I’m a fullstack engineering intern at Neta AI. When I’m not coding, you’ll find me competing in mock trial,
               gardening, playing piano, or traveling to new places.
             </motion.p>
           </div>

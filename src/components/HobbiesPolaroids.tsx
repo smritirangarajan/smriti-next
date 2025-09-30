@@ -3,7 +3,7 @@ import Image from "next/image";
 type Hobby = { title: string; image: string };
 
 const hobbies: Hobby[] = [
-  { title: "Dance", image: "/assets/gallery/dance.jpg" },
+  { title: "Mock Trial", image: "/assets/gallery/mock.JPG" },
   { title: "Gardening", image: "/assets/gallery/garden.jpg" },
   { title: "Piano", image: "/assets/gallery/piano.jpg" },
   { title: "Traveling", image: "/assets/gallery/travel.jpg" },
