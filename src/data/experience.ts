@@ -8,12 +8,30 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    company: "Meta and Major League Hacking",
-    role: "Production Engineering Fellow",
-    logo: "/assets/logos/mlh.jpg",
-    dates: "Jun 2025 — Present",
+    company: "Neta AI",
+    role: "Fullstack Engineering Intern",
+    logo: "/assets/logos/neta.jpeg",
+    dates: "Sep 2025 — Present",
     highlights: [
-      "I developed a full-stack web application using Flask, MySQL, and Docker, implementing automated CI/CD pipelines with GitHub Actions that reduced deployment time by 40% and comprehensive monitoring solutions with Prometheus and Grafana that improved incident detection by 80%. Through strategic automation using advanced Linux/UNIX commands and shell scripting, I streamlined system operations and reduced manual workload by 30% while establishing robust testing frameworks with Pytest to ensure code quality.",
+      "I engineered full-stack features for Neta's pilot AI agent, enabling Fortune 500 clients to evaluate packaging compliance ten times faster than traditional methods. I designed scalable APIs and optimized database queries to support evaluations across tens of thousands of product SKUs, ensuring the system could handle enterprise-scale workloads.",
+    ],
+  },
+  {
+    company: "University of Oregon Law School",
+    role: "Machine Learning Research Intern",
+    logo: "/assets/logos/olaw.jpeg",
+    dates: "Sep 2025 — Present",
+    highlights: [
+      "I analyzed a corpus of over 7,000 FDA citizen petition and response PDFs using natural language processing to surface key themes, parties, and outcomes. I created data visualizations and exploratory data analysis pipelines to understand petition lifecycles, highlighting recurring regulatory bottlenecks that impact the approval process.",
+    ],
+  },
+  {
+    company: "Applied Materials",
+    role: "Data Science Consultant",
+    logo: "/assets/logos/am.jpeg",
+    dates: "Sep 2025 — Present",
+    highlights: [
+      "I developed a digital twin that fuses causal modeling, symbolic learning, and hybrid simulation to enable smarter sensor forecasting and predictive analysis. By integrating multiple modeling paradigms, the system captures both the statistical patterns and underlying causal relationships in sensor data, resulting in more accurate and explainable predictions. This hybrid approach bridges the gap between purely data-driven and physics-based models, making it particularly valuable for applications requiring both precision and interpretability.",
     ],
   },
   {

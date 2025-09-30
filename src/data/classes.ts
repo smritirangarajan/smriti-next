@@ -10,6 +10,11 @@ export const classes = [
 ];
 
 export const clubs = [
+  {
+    name: "Big Data At Berkeley",
+    role: "Consultant",
+    logo: "/assets/logos/bdab.png",
+  },
   { name: "Cal Mock Trial", role: "Attorney", logo: "/assets/logos/mock.png" },
   {
     name: "Women in Computing and Data Science",

@@ -18,8 +18,8 @@ export const projects: Project[] = [
   { slug: "evently", name: "Evently", image: "/assets/projects/evently.png", github: "https://github.com/smritirangarajan/evently", description: "Event discovery and ticketing.", tags: ["React", "Express", "Firebase"] },
 
   // Machine Learning
-  { slug: "eye-disease-detection", name: "Eye Disease Detection", image: "/assets/projects/eye.png", github: "https://github.com/eye-disease-detection", description: "CNN to classify retinal images.", tags: ["Python", "TensorFlow", "CNN"] },
-  { slug: "lstm-stock-prediction", name: "LSTM Time Series", image: "/assets/projects/lstm.png", github: "https://github.com/smritirangarajan/lstm-stock-prediction", description: "LSTM forecasting for stock prices.", tags: ["LSTM", "Time Series", "Data Visualization"] },
+  { slug: "eye-disease-detection", name: "Eye Disease Detection", image: "/assets/projects/eye.png", github: "https://github.com/smritirangarajan/eye-disease-detection", description: "CNN to classify retinal images.", tags: ["Python", "TensorFlow", "CNN"] },
+  { slug: "lstm-stock-prediction", name: "LSTM Time Series", image: "/assets/projects/lstm.png", github: "https://github.com/smritirangarajan/lstm-time-series", description: "LSTM forecasting for stock prices.", tags: ["LSTM", "Time Series", "Data Visualization"] },
   { slug: "pdf-kg", name: "PDF Knowledge Graph Generator", image: "/assets/projects/kg.png", github: "https://github.com/smritirangarajan/pdf-knowledge-graph", description: "Extracts entities from PDFs to a knowledge graph.", tags: ["Spacy NER", "Knowledge graphs", "NLP"] },
 
   // Just for Fun
