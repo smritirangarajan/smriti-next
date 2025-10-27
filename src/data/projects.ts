@@ -9,6 +9,7 @@ export type Project = {
 
 export const projects: Project[] = [
   // Full Stack
+  { slug: "bigbro", name: "BigBro", image: "/assets/projects/bigbro.png", github: "https://github.com/smritirangarajan/bigbro", description: "AI-powered productivity monitor with computer vision attention tracking and accountability system.", tags: ["Chrome Extension", "MediaPipe", "Supabase"] },
   { slug: "spenderella", name: "Spenderella", image: "/assets/projects/spenderella.png", github: "https://github.com/smritirangarajan/spenderella", description: "Fullstack budgeting app with auth, analytics, and receipt scanenrs", tags: ["MERN Stack", "Gemini API", "Cron Jobs"] },
   { slug: "courtchat", name: "CourtChat", image: "/assets/projects/courtchat.png", github: "https://github.com/smritirangarajan/court-chat", description: "RAG Chatbot for Supreme Courtcases", tags: ["VectorDB", "Next.js", "OpenAI"] },
   { slug: "munchmatch", name: "MunchMatch", image: "/assets/projects/munchmatch.png", github: "https://github.com/smritirangarajan/munchmatch", description: "Swipe to match restaurants with friends.", tags: ["MERN Stack", "Vercel", "Render"] },
