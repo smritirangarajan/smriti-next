@@ -6,7 +6,7 @@ const hobbies: Hobby[] = [
   { title: "Mock Trial", image: "/assets/gallery/mock.JPG" },
   { title: "Gardening", image: "/assets/gallery/garden.jpg" },
   { title: "Piano", image: "/assets/gallery/piano.jpg" },
-  { title: "Traveling", image: "/assets/gallery/travel.jpg" },
+  { title: "Traveling", image: "/assets/travel.jpg" },
 ];
 
 export default function HobbiesPolaroids() {
