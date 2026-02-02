@@ -24,7 +24,7 @@ export const projects: Project[] = [
   { slug: "pdf-kg", name: "PDF Knowledge Graph Generator", image: "/assets/projects/kg.png", github: "https://github.com/smritirangarajan/pdf-knowledge-graph", description: "Extracts entities from PDFs to a knowledge graph.", tags: ["Spacy NER", "Knowledge graphs", "NLP"] },
 
   // Just for Fun
-  { slug: "mocktrial-type", name: "MockTrial Type", image: "/assets/projects/mocktrial.png", github: "https://github.com/smritirangarajan/mocktrial-type", description: "Typing game themed around Mock Trial Rules of Evidence.", tags: ["React", "JSON", "Game"] },
+  { slug: "mocktrial-type", name: "MockTrial Type", image: "/assets/projects/mocktrial.png", github: "https://github.com/smritirangarajan/mock-trial-type", description: "Typing game themed around Mock Trial Rules of Evidence.", tags: ["React", "JSON", "Game"] },
   { slug: "donkey-kong", name: "Donkey Kong", image: "/assets/projects/dk.png", github: "https://github.com/smritirangarajan/donkey-kong", description: "Remake for fun.", tags: ["Pygame", "OOP"] },
   { slug: "old-website", name: "Personal Website (Old)", image: "/assets/projects/site.png", github: "https://github.com/smritirangarajan/personal-website", description: "First personal website version.", tags: ["HTML", "CSS", "JS"] },
 ];
